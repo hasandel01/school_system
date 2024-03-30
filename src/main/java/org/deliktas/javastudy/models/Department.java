@@ -1,5 +1,4 @@
-package org.deliktas.javastudy;
-
+package org.deliktas.javastudy.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -9,26 +8,24 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Check;
 
-@Table
 @Entity
-@AllArgsConstructor
+@Table(name = "department", schema = "school_system")
 @NoArgsConstructor
-@Setter
+@AllArgsConstructor
 @Getter
-public class Instructor {
+@Setter
+public class Department {
 
     @Id
-    @Column(name = "ID")
-    private String id;
-
-    @Column(name = "name")
-    private String instructorName;
-
     @Column(name = "dept_name")
     private String departmentName;
 
-    @Column(name = "salary")
-    private Double salary;
+    @Column(name = "building")
+    private String building;
 
+    @Column(name = "budget")
+    @Check(constraints = "budget > 0")
+    private Double budget;
 }

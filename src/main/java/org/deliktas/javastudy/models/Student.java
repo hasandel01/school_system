@@ -1,4 +1,4 @@
-package org.deliktas.javastudy;
+package org.deliktas.javastudy.models;
 
 
 import jakarta.persistence.Column;
