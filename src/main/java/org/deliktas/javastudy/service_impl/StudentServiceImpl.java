@@ -34,4 +34,9 @@ public class StudentServiceImpl implements StudentService {
         return studentRepository.findById(id).orElse(null);
     }
 
+    @Override
+    public Student getAStudentByName(String name) {
+        return studentRepository.findAllByStudentName(name);
+    }
+
 }

@@ -15,4 +15,6 @@ public interface StudentService {
     Student saveAStudent(@RequestBody Student student);
 
     Student getAStudentById(String id);
+
+    Student getAStudentByName(String name);
 }
