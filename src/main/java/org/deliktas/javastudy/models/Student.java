@@ -16,7 +16,7 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Student {
+public class Student implements Comparable<Student> {
 
         @Id
         @Column(name = "ID")
@@ -28,4 +28,8 @@ public class Student {
         @Column(name = "total_cred")
         private Integer totalCredits;
 
+        @Override
+        public int compareTo(Student that) {
+                return Integer.compare(this.getTotalCredits(), that.getTotalCredits());
+        }
 }
