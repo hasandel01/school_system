@@ -1,6 +1,11 @@
 # School Database System
 
-The School Database System is a comprehensive software solution designed to manage various aspects of school administration, including student information, courses, teachers, and more. This README provides an overview of the system, its features, setup instructions, and licensing information.
+The School Database System is a comprehensive software solution designed to 
+manage various aspects of school administration, including student information, courses, teachers, and more. This README provides an overview of the system, its features, setup instructions, and licensing information.
+
+Here is the E-R diagram for the University Enterprise. This Spring JPA project is
+based on this architecture:
+![img.png](img.png)
 
 ## Features
 
