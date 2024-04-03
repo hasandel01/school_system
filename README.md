@@ -28,4 +28,4 @@ based on this architecture:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/school-database-system.git
+   git clone https://github.com/hasandel01/school_system.git
